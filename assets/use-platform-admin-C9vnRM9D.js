@@ -1,1 +1,0 @@
-import{u as i}from"./useQuery-CXDrvMZi.js";import{f as u,i as t,b as n}from"./index-DCy-HEnb.js";function f(){const{user:r,loading:s}=u(),e=i({queryKey:["platform-admin",r?.id],enabled:!s&&!!r&&!t(),staleTime:6e4,queryFn:async()=>{const{data:o,error:a}=await n.rpc("is_platform_admin");if(a)throw a;return o===!0}});return{isAdmin:!t()&&e.data===!0,roleQ:e,user:r}}export{f as u};
