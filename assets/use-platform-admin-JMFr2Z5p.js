@@ -1,0 +1,1 @@
+import{u,y as i,i as t,t as n}from"./index-CmR4BX1g.js";function d(){const{user:e,loading:s}=u(),a=i({queryKey:["platform-admin",e?.id],enabled:!s&&!!e&&!t(),staleTime:6e4,queryFn:async()=>{const{data:o,error:r}=await n.rpc("is_platform_admin");if(r)throw r;return o===!0}});return{isAdmin:!t()&&a.data===!0,roleQ:a,user:e}}export{d as u};
