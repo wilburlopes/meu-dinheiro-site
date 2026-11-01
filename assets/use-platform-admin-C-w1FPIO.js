@@ -1,0 +1,1 @@
+import{u,z as i,i as s,v as n}from"./index-CmfAPObk.js";function d(){const{user:e,loading:t}=u(),a=i({queryKey:["platform-admin",e?.id],enabled:!t&&!!e&&!s(),staleTime:6e4,queryFn:async()=>{const{data:o,error:r}=await n.rpc("is_platform_admin");if(r)throw r;return o===!0}});return{isAdmin:!s()&&a.data===!0,roleQ:a,user:e}}export{d as u};
