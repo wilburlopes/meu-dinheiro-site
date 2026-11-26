@@ -1,0 +1,1 @@
+import{p as i,q as n,i as s,o as u}from"./index-D9jcnONJ.js";function d(){const{user:e,loading:t}=i(),a=n({queryKey:["platform-admin",e?.id],enabled:!t&&!!e&&!s(),staleTime:6e4,queryFn:async()=>{const{data:o,error:r}=await u.rpc("is_platform_admin");if(r)throw r;return o===!0}});return{isAdmin:!s()&&a.data===!0,roleQ:a,user:e}}export{d as u};
